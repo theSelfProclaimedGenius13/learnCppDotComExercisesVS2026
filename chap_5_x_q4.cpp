@@ -2,7 +2,7 @@
 #include<string>
 
 
-const int get_age_chap_5_x_q4() {
+int get_age_chap_5_x_q4() {
 	int age;
 	std::cin >> age;
 	return age;
