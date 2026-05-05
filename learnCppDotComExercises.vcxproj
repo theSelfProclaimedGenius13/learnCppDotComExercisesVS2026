@@ -189,6 +189,8 @@
     <ClCompile Include="chap_13_x_q1.cpp" />
     <ClCompile Include="chap_13_x_q3.cpp" />
     <ClCompile Include="chap_14_10_q1.cpp" />
+    <ClCompile Include="chap_14_12.q1.cpp" />
+    <ClCompile Include="chap_14_12_q2.cpp" />
     <ClCompile Include="chap_14_3_q1.cpp" />
     <ClCompile Include="chap_14_3_q2.cpp" />
     <ClCompile Include="chap_14_5_q2.cpp" />
@@ -227,6 +229,8 @@
     <ClInclude Include="chap_13_x_q1.h" />
     <ClInclude Include="chap_13_x_q3.h" />
     <ClInclude Include="chap_14_10_q1.h" />
+    <ClInclude Include="chap_14_12_q1.h" />
+    <ClInclude Include="chap_14_12_q2.h" />
     <ClInclude Include="chap_14_3_q1.h" />
     <ClInclude Include="chap_14_3_q2.h" />
     <ClInclude Include="chap_14_5_q2.h" />
