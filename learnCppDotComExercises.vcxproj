@@ -179,6 +179,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="chap_14_x_q2.cpp" />
     <ClCompile Include="chap_10_x_q2_a.cpp" />
     <ClCompile Include="chap_11_9_q1.cpp" />
     <ClCompile Include="chap_11_X_q2.cpp" />
@@ -195,6 +196,7 @@
     <ClCompile Include="chap_14_3_q2.cpp" />
     <ClCompile Include="chap_14_5_q2.cpp" />
     <ClCompile Include="chap_14_5_q3.cpp" />
+    <ClCompile Include="chap_14_x_q1.cpp" />
     <ClCompile Include="chap_4_x_q2.cpp" />
     <ClCompile Include="chap_4_x_q3.cpp" />
     <ClCompile Include="chap_5_7_q1.cpp" />
@@ -235,6 +237,8 @@
     <ClInclude Include="chap_14_3_q2.h" />
     <ClInclude Include="chap_14_5_q2.h" />
     <ClInclude Include="chap_14_5_q3.h" />
+    <ClInclude Include="chap_14_x_q1.h" />
+    <ClInclude Include="chap_14_x_q2.h" />
     <ClInclude Include="chap_4_x_q2.h" />
     <ClInclude Include="chap_4_x_q3.h" />
     <ClInclude Include="chap_5_7_q1.h" />
