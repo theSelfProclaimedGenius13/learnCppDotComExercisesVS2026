@@ -135,6 +135,9 @@
     <ClCompile Include="chap_14_x_q2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="chap_15_5_q1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chap_10_x_q2_a.h">
@@ -252,6 +255,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="chap_14_x_q2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="chap_15_5_q1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
