@@ -202,6 +202,7 @@
     <ClCompile Include="chap_15_9_q1_main.cpp" />
     <ClCompile Include="chap_15_9_q1_Point3d.cpp" />
     <ClCompile Include="chap_15_9_q1_Vector3d.cpp" />
+    <ClCompile Include="chap_15_x_q1_main.cpp" />
     <ClCompile Include="chap_4_x_q2.cpp" />
     <ClCompile Include="chap_4_x_q3.cpp" />
     <ClCompile Include="chap_5_7_q1.cpp" />
@@ -249,6 +250,8 @@
     <ClInclude Include="chap_15_9_q1_main.h" />
     <ClInclude Include="chap_15_9_q1_Point3d.h" />
     <ClInclude Include="chap_15_9_q1_Vector3d.h" />
+    <ClInclude Include="chap_15_x_q1_main.h" />
+    <ClInclude Include="chap_15_x_q1_random.h" />
     <ClInclude Include="chap_4_x_q2.h" />
     <ClInclude Include="chap_4_x_q3.h" />
     <ClInclude Include="chap_5_7_q1.h" />
