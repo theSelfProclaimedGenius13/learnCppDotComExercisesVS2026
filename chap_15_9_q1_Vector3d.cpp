@@ -1,0 +1,10 @@
+#include "chap_15_9_q1_Vector3d.h"
+#include <iostream>
+Vector3d::Vector3d(double x, double y, double z)
+    : m_x{ x }, m_y{ y }, m_z{ z }
+{}
+
+void Vector3d::print_chap_15_9_q1() const
+{
+    std::cout << "Vector(" << m_x << " , " << m_y << " , " << m_z << ")\n";
+}

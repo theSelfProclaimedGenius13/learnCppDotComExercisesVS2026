@@ -141,6 +141,15 @@
     <ClCompile Include="chap_15_7_q1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="chap_15_9_q1_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chap_15_9_q1_Point3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chap_15_9_q1_Vector3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chap_10_x_q2_a.h">
@@ -264,6 +273,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="chap_15_7_q1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="chap_15_9_q1_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="chap_15_9_q1_Point3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="chap_15_9_q1_Vector3d.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
