@@ -31,7 +31,7 @@ void print_min_max_chap_16_x_q4(const std::vector<T>& v, const std::pair<std::ve
 }
 
 template <typename T>
-std::vector<T> vector_input() {
+std::vector<T> vector_input_chap_16_x_q4() {
 	std::vector<T> v;
 	std::cout << "Enter the number in array and press -1 when done :\n";
 	T input;
@@ -42,7 +42,7 @@ std::vector<T> vector_input() {
 }
 
 void result_message_chap_16_x_q4() {
-	const std::vector v1{ vector_input<int>() };
+	const std::vector v1{ vector_input_chap_16_x_q4<int>() };
 	if(v1.size()<=0){
 		std::cout << "No input provided.\n";
 		return;

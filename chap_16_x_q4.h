@@ -8,5 +8,5 @@ std::pair<std::vector<T>, std::vector<T>> min_max_chap_16_x_q4(const std::vector
 template<typename T>
 void print_min_max_chap_16_x_q4(const std::vector<T>& v, const std::pair<std::vector<T>, std::vector<T>>& p);
 template <typename T>
-std::vector<T> vector_input();
+std::vector<T> vector_input_chap_16_x_q4();
 void result_message_chap_16_x_q4();
