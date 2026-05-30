@@ -17,6 +17,7 @@ Card Deck::deal_card() {
 }
 void Deck::shuffle() {
 	std::shuffle(m_cards.begin(), m_cards.end(), Random::mt );
+	m_card_index = 0;
 }
 
 
