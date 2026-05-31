@@ -1,5 +1,7 @@
 #include "chap_17_x_q4.h"
 #include <iostream>
+#include <vector>
+#include <limits>
 
 bool invalid_input() {
 	if (!std::cin || (!std::cin.eof() && std::cin.peek() != '\n')) {
@@ -34,7 +36,13 @@ bool player_options() {
 void dealer_plays(Deck& deck, Player& dealer) {
 	while (dealer.score < Settings::dealer_stand_score) {
 		auto card = deck.deal_card();
-		dealer.score += card.rank_value_chap_17_x_q3();
+		if ((card.rank_value_chap_17_x_q3()+dealer.score >= Settings::bust_score) && (card.rank_value_chap_17_x_q3() == 11)) {
+			dealer.score += 1;
+		}
+		else {
+			dealer.score += card.rank_value_chap_17_x_q3();
+		}
+		
 		std::cout << "Dealer was dealt: " << card << ".  They now have: " << dealer.score << "\n";
 	}
 }
@@ -52,38 +60,49 @@ void player_plays(Deck& deck, Player& player) {
 	}
 }
 
-bool blackjack() {
+int blackjack() {
 	Deck deck{};
 	deck.shuffle();
-	Player dealer{ deck.deal_card().rank_value_chap_17_x_q3() };
-	std::cout << "The dealer is showing: " << dealer.score << "\n";
-	Player player{ deck.deal_card().rank_value_chap_17_x_q3() };
-	std::cout << "You have score: " << player.score << "\n";
+	auto dealer_card{ deck.deal_card() };
+	Player dealer{ dealer_card.rank_value_chap_17_x_q3() };
+	std::cout << "The dealer is showing: "<< dealer_card <<"  ("<< dealer.score << ")\n";
+	std::vector<Card> player_cards { deck.deal_card(), deck.deal_card()};
+	Player player{ player_cards[0].rank_value_chap_17_x_q3()+ player_cards[1].rank_value_chap_17_x_q3() };
+	if (player.score >= 21) {
+		player.score -= 10;
+		std::cout << "You are showing: " << player_cards[0] << " " << player_cards[1] << "  (" << player.score << ")\n";
+	}
+	else {
+		std::cout << "You are showing: " << player_cards[0] << " " << player_cards[1] << "  (" << player.score << ")\n";
+	}
+
 	player_plays(deck, player);
 	if (player.score >= Settings::bust_score){
-		return false;
+		return 0;
 	}
 	else {
 		dealer_plays(deck, dealer);
-		if ((dealer.score >= Settings::bust_score) || (dealer.score < player.score)) {
-			return true;
+		if (player.score == dealer.score) {
+			return -1;
 		}
-		else if (dealer.score == player.score) {
-			std::cout << "It's a tie! Dealer wins\n";
-			return false;
+		else if ((dealer.score >= Settings::bust_score) || (dealer.score < player.score)) {
+			return 1;
 		}
 		else {
-			return false;
+			return 0;
 		}
 	}
 	
 }
 void result_message_chap_17_x_q4() {
-	
-	if (blackjack()) {
-		std::cout << "Player wins!\n";
+	int result { blackjack() };
+	if (result==-1) {
+		std::cout << "It's a draw!\n";
+	}
+	else if(result==0) {
+		std::cout << "Dealer wins!\n";
 	}
 	else {
-		std::cout << "Dealer wins!\n";
+		std::cout << "Player Wins!\n";
 	}
 }

@@ -12,5 +12,5 @@ bool invalid_input();
 bool player_options();
 void dealer_plays(Deck& deck, Player& player);
 void player_plays(Deck& deck, Player& player);
-bool blackjack();
+int blackjack();
 void result_message_chap_17_x_q4();
