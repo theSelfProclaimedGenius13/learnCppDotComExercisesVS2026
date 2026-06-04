@@ -1,7 +1,7 @@
-#include "chap_18_1_q4.h"
+#include "chap_19_2_q1.h"
 #include <iostream>
 
 int main() {
-	result_message_chap_18_1_q4();
+	result_message_chap_19_2_q1();
 	return 0;
 }	
